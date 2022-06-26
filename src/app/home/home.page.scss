@@ -1,0 +1,38 @@
+ion-content {
+  --ion-background-color: #ebeef0;
+}
+
+.wrapper {
+  height: 100%;
+}
+
+.wrapper-inner {
+  height: 33%;
+}
+
+
+.row-center {
+  display: flex;
+  align-items: center;
+}
+
+ion-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: black;
+}
+
+h1 {
+  font-size: 5rem;
+  margin: 0;
+
+  span {
+    font-size: 1.5rem;
+  }
+}
+
+p {
+  text-align: center;
+  margin-top: 0;
+}

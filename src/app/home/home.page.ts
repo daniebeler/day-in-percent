@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { DataService, Message } from '../services/data.service';
 
 @Component({
   selector: 'app-home',
@@ -7,16 +6,25 @@ import { DataService, Message } from '../services/data.service';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
-  constructor(private data: DataService) {}
 
-  refresh(ev) {
-    setTimeout(() => {
-      ev.detail.complete();
-    }, 3000);
+  currentTime = new Date();
+
+  secondsOfWholeDay = 86400;
+
+  seconds = 0;
+  percent = 0;
+
+  constructor(
+  ) {
+    this.updateTime();
+    setInterval(() => { this.updateTime(); }, 1000);
   }
 
-  getMessages(): Message[] {
-    return this.data.getMessages();
+
+  updateTime() {
+    this.currentTime = new Date();
+    this.seconds = this.currentTime.getSeconds() + (60 * this.currentTime.getMinutes()) + (60 * 60 * this.currentTime.getHours());
+    this.percent = Math.floor(this.seconds / this.secondsOfWholeDay * 100);
   }
 
 }

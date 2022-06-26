@@ -24,3 +24,19 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+
+@font-face {
+  font-family: "poppins-regular";
+  src: url("/assets/fonts/Jost-Light.ttf") format("truetype");
+  font-display: swap;
+}
+
+* {
+  font-family: "poppins-regular";
+  -webkit-user-select: auto;
+  -khtml-user-select: auto;
+  -moz-user-select: auto;
+  -o-user-select: auto;
+  user-select: auto;
+}
