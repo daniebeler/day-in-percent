@@ -20,7 +20,6 @@ export class HomePage {
     setInterval(() => { this.updateTime(); }, 1000);
   }
 
-
   updateTime() {
     this.currentTime = new Date();
     this.seconds = this.currentTime.getSeconds() + (60 * this.currentTime.getMinutes()) + (60 * 60 * this.currentTime.getHours());
