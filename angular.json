@@ -5,14 +5,16 @@
     "app": {
       "root": "",
       "sourceRoot": "src",
+      "prefix": "app",
       "projectType": "application",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/app",
+            "outputPath": {
+              "base": "www"
+            },
             "index": "src/index.html",
-            "browser": "src/main.ts",
             "tsConfig": "tsconfig.json",
             "assets": [
               "src/assets"
