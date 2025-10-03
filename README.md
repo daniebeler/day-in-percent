@@ -1,5 +1,5 @@
 # Day in Percent
-Day in Percent is a website which shows the current day-progress in percent. It is developed with [Ionic](https://ionicframework.com) in combination with [Angular](https://angular.io). The design is intentionally kept minimalistic and simple.
+Day in Percent is a website which shows the current day-progress in percent. It is developed with [Angular](https://angular.io). The design is intentionally kept minimalistic and simple.
 
 Website: [day-in-percent.daniebeler.com](https://day-in-percent.daniebeler.com/)
 

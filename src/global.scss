@@ -2,6 +2,7 @@
   font-family: "poppins-regular";
   src: url("/assets/fonts/Jost-Light.ttf") format("truetype");
   font-display: swap;
+  font-weight: 100;
 }
 
 * {
@@ -11,4 +12,13 @@
   -moz-user-select: auto;
   -o-user-select: auto;
   user-select: auto;
+  font-weight: 100;
+}
+
+body {
+  margin: 0;
+  background-color: #ebeef0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
