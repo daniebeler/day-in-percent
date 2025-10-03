@@ -14,9 +14,22 @@
             "index": "src/index.html",
             "browser": "src/main.ts",
             "tsConfig": "tsconfig.json",
-            "assets": ["src/assets"],
-            "styles": ["src/styles.css"],
+            "assets": [
+              "src/assets"
+            ],
+            "styles": [
+              "src/styles.css"
+            ],
             "scripts": []
+          },
+          "configurations": {
+            "production": {
+              "optimization": true,
+              "aot": true,
+              "sourceMap": false,
+              "extractLicenses": true,
+              "outputHashing": "all"
+            }
           }
         },
         "serve": {
