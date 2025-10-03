@@ -1,7 +1,0 @@
-{
-  "name": "Day in percent",
-  "integrations": {
-    "capacitor": {}
-  },
-  "type": "angular"
-}
