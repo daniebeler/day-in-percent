@@ -3,12 +3,12 @@
 .wrapper {
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
   margin: 0;
   height: 100vh;
 }
 
 .wrapper-inner {
-  height: 33%;
   display: flex;
   justify-content: center;
 }
