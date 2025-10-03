@@ -1,16 +1,18 @@
-<div class="wrapper">
-  <div class="wrapper-inner">
-    <h2>
-      {{ currentTime.toLocaleTimeString('de-at', { hour: 'numeric', minute: '2-digit' }) }}
-    </h2>
-  </div>
+@if (time$ | async; as time) {
+  <div class="wrapper">
+    <div class="wrapper-inner">
+      <h2>
+        {{ time.currentTime.toLocaleTimeString('de-AT', { hour: 'numeric', minute: '2-digit' }) }}
+      </h2>
+    </div>
 
-  <div class="wrapper-inner">
-    <h1>{{ percent }}<span>%</span></h1>
-  </div>
+    <div class="wrapper-inner">
+      <h1>{{ time.percent }}<span>%</span></h1>
+    </div>
 
-  <div class="wrapper-inner">
-    <p>Don't wait. The time will never be just right.</p>
-    <p>- Napoleon Hill</p>
+    <div class="wrapper-inner">
+      <p>Don't wait. The time will never be just right.</p>
+      <p>- Napoleon Hill</p>
+    </div>
   </div>
-</div>
+}
