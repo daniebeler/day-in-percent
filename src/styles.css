@@ -1,18 +1,20 @@
 @font-face {
-  font-family: "poppins-regular";
+  font-family: "Jost-Light";
   src: url("/assets/fonts/Jost-Light.ttf") format("truetype");
   font-display: swap;
-  font-weight: 100;
+  font-weight: 300;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
 * {
-  font-family: "poppins-regular";
-  -webkit-user-select: auto;
-  -khtml-user-select: auto;
-  -moz-user-select: auto;
-  -o-user-select: auto;
-  user-select: auto;
-  font-weight: 100;
+  font-family: "Jost-Light", "Poppins", "Helvetica Neue", Arial, sans-serif;
+  user-select: none;
+  font-weight: 300;
 }
 
 body {
@@ -21,4 +23,8 @@ body {
   height: 100vh;
   display: flex;
   flex-direction: column;
+  color: #222;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
